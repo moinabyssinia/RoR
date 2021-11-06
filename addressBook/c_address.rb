@@ -24,7 +24,7 @@ end
 
 home = Address.new
 home.kind = "home"
-home.street_1 = "57 Orange Blossom St."
+home.street_1 = "124 Hunter's Reserve Cir."
 home.city = "Portland"
 home.state = "OR"
 home.postal_code = "12345"
