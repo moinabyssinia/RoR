@@ -21,16 +21,3 @@ class Address
         address 
     end 
 end
-
-home = Address.new
-home.kind = "home"
-home.street_1 = "124 Hunter's Reserve Cir."
-home.city = "Portland"
-home.state = "OR"
-home.postal_code = "12345"
-
-
-
-puts home.to_s('short')
-puts "\n"
-puts home.to_s('long')
