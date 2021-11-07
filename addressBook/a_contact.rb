@@ -39,6 +39,7 @@ class Contact
 
     # print out phone numbers
     def print_phone_number
+        puts "\n"
         self.phone_numbers.each do |item|
             puts item
         end
@@ -46,7 +47,7 @@ class Contact
 
     # print out addresses
     def print_addresses
-        puts "Addresses"
+        puts "\nAddresses"
         addresses.each do |item|
             puts item.to_s('short')
         end
@@ -111,24 +112,4 @@ class Contact
 
 end
 
-my_name = Contact.new
 
-# name
-my_name.first_name = "Michael"
-my_name.middle_name = "Getachew"
-my_name.last_name = "Tadesse"
-
-# phone numbers
-my_name.add_phone("cell", "407-668-5259")
-my_name.add_phone("home", "+251-116-602292")
-my_name.add_phone("work", "407-123-4567")
-
-
-# addresses
-my_name.add_address("Home", "123 Main St.", "", "Portland", "OR", "12345")
-
-
-# puts my_name.inspect
-puts my_name.to_s('last_first')
-my_name.print_phone_number
-my_name.print_addresses
