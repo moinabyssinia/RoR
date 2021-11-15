@@ -1,0 +1,3 @@
+# Logfile created on 2021-11-13 17:16:54 -0500 by logger.rb/v1.4.3
+I, [2021-11-13T17:16:54.954406 #444764]  INFO -- : [Jason] Deposited 100
+I, [2021-11-13T17:16:54.954812 #444764]  INFO -- : [Jason] Withdrew 50
