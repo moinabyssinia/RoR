@@ -1,5 +1,13 @@
 <h1> TV Series I watched </h1>
 
-<% @pages.each do |page| %>
-    <p> <strong><%= link_to page.title, "/pages/#{page.id}" %></strong> </p>
-<% end %>
+<div>
+    <button> <a href = '/pages/new'> Add New TV Series </a>  </button>
+</div>
+
+<div>
+
+    <% @pages.each do |page| %>
+        <p> <strong><%= link_to page.title, "/pages/#{page.id}" %></strong> </p>
+    <% end %>
+
+</div>

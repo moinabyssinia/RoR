@@ -1334,3 +1334,664 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 33ms (Views: 23.2ms | ActiveRecord: 0.9ms | Allocations: 14987)
 
 
+Started GET "/pages/4" for 127.0.0.1 at 2021-11-27 10:25:02 -0500
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pages_controller.rb:7:in `show'
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/show.html.erb within layouts/application
+  Rendered pages/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3190)
+Completed 200 OK in 27ms (Views: 9.8ms | ActiveRecord: 0.8ms | Allocations: 7660)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 10:25:11 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 886)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3750)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 4251)
+
+
+Started GET "/pages/8" for 127.0.0.1 at 2021-11-27 10:36:42 -0500
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pages_controller.rb:7:in `show'
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/show.html.erb within layouts/application
+  Rendered pages/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 55)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2917)
+Completed 200 OK in 13ms (Views: 6.1ms | ActiveRecord: 1.0ms | Allocations: 4515)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 10:36:45 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 875)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3737)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.4ms | Allocations: 4194)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 10:39:22 -0500
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for PagesController
+Did you mean?  show
+               index):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:04:19 -0500
+Processing by PagesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pages_controller.rb:11:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1138)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1212)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.3ms | Allocations: 6953)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    1: <%= form_with(@page) do |f| %>
+    2:    <div class = "field" >
+    3:         <%= f.text_field :title %>
+    4:         <%= f.text_field :body %>
+  
+app/views/pages/new.html.erb:1
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:04:34 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 956)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4230)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 5651)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:05:52 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3826)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 5262)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:07:22 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 62.8ms | Allocations: 6133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.9ms | Allocations: 9294)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.0ms | Allocations: 10698)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:07:29 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 886)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 4123)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 5561)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:08:02 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2456)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2530)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3881)
+
+
+  
+ActionView::Template::Error (undefined method `text' for #<ActionView::Helpers::FormBuilder:0x0000556f5dce2198 @nested_child_index={}, @options={:allow_method_names_outside_object=>true, :skip_default_ids=>false}, @template=#<ActionView::Base:0x0000000000a7f8>, @object=#<Page id: nil, title: nil, body: nil, slug: nil, created_at: nil, updated_at: nil>, @object_name="page", @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>true}, @default_html_options={}, @multipart=nil, @index=nil>):
+     6:    
+     7:    <div class = "field" >
+     8:         <%= f.label :body %>
+     9:         <%= f.text :body %>
+    10:    </div> 
+    11: <% end %>
+  
+app/views/pages/new.html.erb:9
+app/views/pages/new.html.erb:1
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:08:26 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 2992)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 6163)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms | Allocations: 7567)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:08:51 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4362)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 5798)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:09:58 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1168)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4406)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 5807)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:10:05 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1302)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 4530)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 5925)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:12:24 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1259)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4487)
+Completed 200 OK in 13ms (Views: 11.5ms | Allocations: 5877)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:12:27 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/pages/index.html.erb:5
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 4759)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 1.0ms | Allocations: 5446)
+
+
+Started GET "/pages/4" for 127.0.0.1 at 2021-11-27 11:12:33 -0500
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/show.html.erb within layouts/application
+  Rendered pages/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3042)
+Completed 200 OK in 15ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 4372)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:13:18 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:7
+  Rendered pages/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 4441)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 0.4ms | Allocations: 5770)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:13:32 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 4023)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.0ms | Allocations: 4668)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:14:00 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:9
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4436)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 5767)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:15:31 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:9
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1156)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4422)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 5809)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:17:06 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:9
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4429)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 5818)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:18:04 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:9
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1156)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4412)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 5795)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:18:08 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4022)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 4667)
+
+
+Started POST "/pages" for 127.0.0.1 at 2021-11-27 11:20:48 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/pages"):
+  
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:24:40 -0500
+Processing by PagesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pages_controller.rb:11:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4574)
+Completed 200 OK in 30ms (Views: 21.2ms | ActiveRecord: 0.3ms | Allocations: 9902)
+
+
+Started POST "/pages" for 127.0.0.1 at 2021-11-27 11:24:56 -0500
+Processing by PagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "page"=>{"title"=>"Michael Jackson", "body"=>"From abused child to the King of Pop, Michael Jackson's success story is one of the most inspiring in history. Born on August 29th, 1958, in the small city of Gary, Indiana, Jackson's childhood was an interesting and troubling experience. With nine brothers and sisters, his family lived in a very small home and survived primarily on his father's income as a local steel worker.Throughout his youth, Michael, along with his brothers and sisters, performed as a local song and dance act. Dubbed The Jackson Brothers, the family band performed on television and radio in the area, soon gaining nationwide exposure. They expanded the band's routine, brought in new appeal for listeners, and were soon calling themselves The Jackson Five.", "slug"=>"MJ"}, "commit"=>"Create Page"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2991)
+
+
+  
+NoMethodError (undefined method `plain' for #<PagesController:0x0000000000c9b8>):
+  
+app/controllers/pages_controller.rb:15:in `create'
+Started POST "/pages" for 127.0.0.1 at 2021-11-27 11:25:25 -0500
+Processing by PagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "page"=>{"title"=>"Michael Jackson", "body"=>"From abused child to the King of Pop, Michael Jackson's success story is one of the most inspiring in history. Born on August 29th, 1958, in the small city of Gary, Indiana, Jackson's childhood was an interesting and troubling experience. With nine brothers and sisters, his family lived in a very small home and survived primarily on his father's income as a local steel worker.Throughout his youth, Michael, along with his brothers and sisters, performed as a local song and dance act. Dubbed The Jackson Brothers, the family band performed on television and radio in the area, soon gaining nationwide exposure. They expanded the band's routine, brought in new appeal for listeners, and were soon calling themselves The Jackson Five.", "slug"=>"MJ"}, "commit"=>"Create Page"}
+  Rendering text template
+  Rendered text template (Duration: 0.2ms | Allocations: 43)
+Completed 200 OK in 4ms (Views: 2.6ms | Allocations: 1047)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:46:14 -0500
+  
+SyntaxError (/home/michael/Documents/ctd/RoR/blog/app/controllers/pages_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/pages_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/pages_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/pages_controller.rb:23: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:46:26 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/pages/index.html.erb:9
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:9
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 4999)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 8094)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 1.7ms | Allocations: 9571)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:46:30 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3900)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 4425)
+
+
+Started POST "/pages" for 127.0.0.1 at 2021-11-27 11:46:42 -0500
+Processing by PagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "page"=>{"title"=>"Michael Jackson", "body"=>"From abused child to the King of Pop, Michael Jackson's success story is one of the most inspiring in history. Born on August 29th, 1958, in the small city of Gary, Indiana, Jackson's childhood was an interesting and troubling experience. With nine brothers and sisters, his family lived in a very small home and survived primarily on his father's income as a local steel worker.Throughout his youth, Michael, along with his brothers and sisters, performed as a local song and dance act. Dubbed The Jackson Brothers, the family band performed on television and radio in the area, soon gaining nationwide exposure. They expanded the band's routine, brought in new appeal for listeners, and were soon calling themselves The Jackson Five.", "slug"=>"MJ"}, "commit"=>"Create Page"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pages_controller.rb:18:in `create'
+  [1m[36mPage Create (1.2ms)[0m  [1m[32mINSERT INTO "pages" ("title", "body", "slug", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Michael Jackson"], ["body", "From abused child to the King of Pop, Michael Jackson's success story is one of the most inspiring in history. Born on August 29th, 1958, in the small city of Gary, Indiana, Jackson's childhood was an interesting and troubling experience. With nine brothers and sisters, his family lived in a very small home and survived primarily on his father's income as a local steel worker.Throughout his youth, Michael, along with his brothers and sisters, performed as a local song and dance act. Dubbed The Jackson Brothers, the family band performed on television and radio in the area, soon gaining nationwide exposure. They expanded the band's routine, brought in new appeal for listeners, and were soon calling themselves The Jackson Five."], ["slug", "MJ"], ["created_at", "2021-11-27 16:46:42.351201"], ["updated_at", "2021-11-27 16:46:42.351201"]]
+  ↳ app/controllers/pages_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pages_controller.rb:18:in `create'
+No template found for PagesController#create, rendering head :no_content
+Completed 204 No Content in 56ms (ActiveRecord: 7.3ms | Allocations: 6638)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:47:28 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/pages/index.html.erb:9
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:9
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 4801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 7865)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 1.5ms | Allocations: 9181)
+
+
+Started GET "/pages/9" for 127.0.0.1 at 2021-11-27 11:47:30 -0500
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/show.html.erb within layouts/application
+  Rendered pages/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 205)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3077)
+Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 0.4ms | Allocations: 4480)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:47:34 -0500
+Processing by PagesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3901)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 4374)
+
+
+Started POST "/pages" for 127.0.0.1 at 2021-11-27 11:48:28 -0500
+Processing by PagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "page"=>{"title"=>"Alicia Keys", "body"=>"Alicia Keys was born on January 25, 1981 at Manhattan, New York. She was trained in both dance and music at the insistence of her mother. She soon took interest in music at the age of 5 and by the age of 7 she had started to play the piano. She graduated as a valedictorian at the age of 16 from the Professional Performing Arts School. She was naturally talented in music such that she started writing songs at the age of 14 itself. Soon after coming out of Arts college, she was signed to Columbia Records. She wrote and recorded the song ‘Dah Dee Dah’ which was put in the soundtrack of the film ‘Men in Black’ (1997). Next she went on to join J Records in 1999 and recorded the songs ‘Rock wit U’ and ‘Rear View mirror’ with the Kerry brothers which was put in the soundtracks of ‘Shaft’ (2001) and ‘Dr. Dolittle’ (2001). Her first album ‘Songs in A Minor’ came out in the year 2001. It was a major hit with the audience, selling 6.2 million copies in the United States and more than 12 million copies in the International market. The song reached the top spot on the Billboard 200 with sales in the first week in excess of 230,000 copies.", "slug"=>"AC"}, "commit"=>"Create Page"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pages_controller.rb:18:in `create'
+  [1m[36mPage Create (0.4ms)[0m  [1m[32mINSERT INTO "pages" ("title", "body", "slug", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Alicia Keys"], ["body", "Alicia Keys was born on January 25, 1981 at Manhattan, New York. She was trained in both dance and music at the insistence of her mother. She soon took interest in music at the age of 5 and by the age of 7 she had started to play the piano. She graduated as a valedictorian at the age of 16 from the Professional Performing Arts School. She was naturally talented in music such that she started writing songs at the age of 14 itself. Soon after coming out of Arts college, she was signed to Columbia Records. She wrote and recorded the song ‘Dah Dee Dah’ which was put in the soundtrack of the film ‘Men in Black’ (1997). Next she went on to join J Records in 1999 and recorded the songs ‘Rock wit U’ and ‘Rear View mirror’ with the Kerry brothers which was put in the soundtracks of ‘Shaft’ (2001) and ‘Dr. Dolittle’ (2001). Her first album ‘Songs in A Minor’ came out in the year 2001. It was a major hit with the audience, selling 6.2 million copies in the United States and more than 12 million copies in the International market. The song reached the top spot on the Billboard 200 with sales in the first week in excess of 230,000 copies."], ["slug", "AC"], ["created_at", "2021-11-27 16:48:28.086273"], ["updated_at", "2021-11-27 16:48:28.086273"]]
+  ↳ app/controllers/pages_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pages_controller.rb:18:in `create'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 6.8ms | Allocations: 7619)
+
+
+  
+NameError (undefined local variable or method `root_path' for #<PagesController:0x00000000010838>):
+  
+app/controllers/pages_controller.rb:19:in `create'
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 11:48:39 -0500
+Processing by PagesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pages_controller.rb:11:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4168)
+Completed 200 OK in 21ms (Views: 10.2ms | ActiveRecord: 1.1ms | Allocations: 9223)
+
+
+Started POST "/pages" for 127.0.0.1 at 2021-11-27 11:48:48 -0500
+Processing by PagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "page"=>{"title"=>"Alicia Keys", "body"=>"Alicia Keys was born on January 25, 1981 at Manhattan, New York. She was trained in both dance and music at the insistence of her mother. She soon took interest in music at the age of 5 and by the age of 7 she had started to play the piano. She graduated as a valedictorian at the age of 16 from the Professional Performing Arts School. She was naturally talented in music such that she started writing songs at the age of 14 itself. Soon after coming out of Arts college, she was signed to Columbia Records. She wrote and recorded the song ‘Dah Dee Dah’ which was put in the soundtrack of the film ‘Men in Black’ (1997). Next she went on to join J Records in 1999 and recorded the songs ‘Rock wit U’ and ‘Rear View mirror’ with the Kerry brothers which was put in the soundtracks of ‘Shaft’ (2001) and ‘Dr. Dolittle’ (2001). Her first album ‘Songs in A Minor’ came out in the year 2001. It was a major hit with the audience, selling 6.2 million copies in the United States and more than 12 million copies in the International market. The song reached the top spot on the Billboard 200 with sales in the first week in excess of 230,000 copies.", "slug"=>"AC"}, "commit"=>"Create Page"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pages_controller.rb:18:in `create'
+  [1m[36mPage Create (0.3ms)[0m  [1m[32mINSERT INTO "pages" ("title", "body", "slug", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Alicia Keys"], ["body", "Alicia Keys was born on January 25, 1981 at Manhattan, New York. She was trained in both dance and music at the insistence of her mother. She soon took interest in music at the age of 5 and by the age of 7 she had started to play the piano. She graduated as a valedictorian at the age of 16 from the Professional Performing Arts School. She was naturally talented in music such that she started writing songs at the age of 14 itself. Soon after coming out of Arts college, she was signed to Columbia Records. She wrote and recorded the song ‘Dah Dee Dah’ which was put in the soundtrack of the film ‘Men in Black’ (1997). Next she went on to join J Records in 1999 and recorded the songs ‘Rock wit U’ and ‘Rear View mirror’ with the Kerry brothers which was put in the soundtracks of ‘Shaft’ (2001) and ‘Dr. Dolittle’ (2001). Her first album ‘Songs in A Minor’ came out in the year 2001. It was a major hit with the audience, selling 6.2 million copies in the United States and more than 12 million copies in the International market. The song reached the top spot on the Billboard 200 with sales in the first week in excess of 230,000 copies."], ["slug", "AC"], ["created_at", "2021-11-27 16:48:48.322541"], ["updated_at", "2021-11-27 16:48:48.322541"]]
+  ↳ app/controllers/pages_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pages_controller.rb:18:in `create'
+Redirected to http://localhost:3000/pages
+Completed 302 Found in 20ms (ActiveRecord: 7.5ms | Allocations: 4978)
+
+
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 11:48:48 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:9
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3896)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 4389)
+
+
+Started GET "/pages/10" for 127.0.0.1 at 2021-11-27 11:48:53 -0500
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPage Load (0.5ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/show.html.erb within layouts/application
+  Rendered pages/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2921)
+Completed 200 OK in 22ms (Views: 12.2ms | ActiveRecord: 0.5ms | Allocations: 4096)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2021-11-27 12:02:25 -0500
+Processing by PagesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pages_controller.rb:11:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4581)
+Completed 200 OK in 22ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 9879)
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2021-11-27 12:03:04 -0500
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/show.html.erb within layouts/application
+  Rendered pages/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3501)
+Completed 200 OK in 16ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 5793)
+
+
+Started GET "/pages/1/edit" for 127.0.0.1 at 2021-11-27 12:03:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/pages/1/edit"):
+  
+Started GET "/pages/1/edit" for 127.0.0.1 at 2021-11-27 12:03:21 -0500
+  
+ActionController::RoutingError (uninitialized constant PageController
+Did you mean?  PagesController):
+  
+Started GET "/pages/1/edit" for 127.0.0.1 at 2021-11-27 12:05:08 -0500
+  
+ActionController::RoutingError (uninitialized constant PageController
+Did you mean?  PagesController):
+  
+Started GET "/pages/1/edit" for 127.0.0.1 at 2021-11-27 12:05:11 -0500
+  
+ActionController::RoutingError (uninitialized constant PageController
+Did you mean?  PagesController):
+  
+Started GET "/pages/1/edit" for 127.0.0.1 at 2021-11-27 12:06:01 -0500
+  
+ActionController::RoutingError (uninitialized constant PageController
+Did you mean?  PagesController):
+  
+Started GET "/pages" for 127.0.0.1 at 2021-11-27 12:06:19 -0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/pages/index.html.erb:9
+  [1m[36mPage Load (1.0ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/pages/index.html.erb:9
+  Rendered pages/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 5063)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 8291)
+Completed 200 OK in 35ms (Views: 30.5ms | ActiveRecord: 2.5ms | Allocations: 10296)
+
+
+Started GET "/pages/11" for 127.0.0.1 at 2021-11-27 12:06:23 -0500
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/show.html.erb within layouts/application
+  Rendered pages/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3044)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 4415)
+
+
+Started GET "/pages/11/edit" for 127.0.0.1 at 2021-11-27 12:06:27 -0500
+  
+ActionController::RoutingError (uninitialized constant PageController
+Did you mean?  PagesController):
+  
+Started GET "/pages/11/edit" for 127.0.0.1 at 2021-11-27 12:06:41 -0500
+Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pages_controller.rb:23:in `edit'
+  [1m[36mPage Load (1.5ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:23:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/edit.html.erb within layouts/application
+  Rendered pages/edit.html.erb within layouts/application (Duration: 11.8ms | Allocations: 3520)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3594)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 2.9ms | Allocations: 9769)
+
+
+  
+ActionView::Template::Error (undefined method `page_path' for #<ActionView::Base:0x00000000015ec8>
+Did you mean?  pages_path
+               image_path):
+    1: <%= form_for(@page) do |f| %>
+    2:    <div class = "field" >
+    3:         <%= f.label :title %>
+    4:         <%= f.text_field :title %>
+  
+app/views/pages/edit.html.erb:1
+Started GET "/pages/11/edit" for 127.0.0.1 at 2021-11-27 12:07:06 -0500
+Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:23:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/edit.html.erb within layouts/application
+  Rendered pages/edit.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3402)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3476)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms | Allocations: 5428)
+
+
+  
+ActionView::Template::Error (undefined method `page_path' for #<ActionView::Base:0x00000000016350>
+Did you mean?  pages_path
+               image_path):
+    1: <%= form_with model: @page do |f| %>
+    2:    <div class = "field" >
+    3:         <%= f.label :title %>
+    4:         <%= f.text_field :title %>
+  
+app/views/pages/edit.html.erb:1
