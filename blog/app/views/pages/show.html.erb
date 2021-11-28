@@ -7,6 +7,10 @@
 <ul>
     <%= link_to "Home", '/pages' %>
     <%= link_to "Edit", edit_page_path(@page) %>
+
+    <%# notice here we can specify the instance variabel as it is %>
+    <%# also notice the http request method is adjusted to delete %>
+    <%= link_to "Delete", @page, method: :delete %>
 </ul>
 
 

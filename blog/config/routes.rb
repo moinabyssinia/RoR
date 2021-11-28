@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   post '/pages', to: 'pages#create' 
   get '/pages/:id/edit', to: 'pages#edit', as: 'edit_page'
   patch '/pages/:id', to: 'pages#update'
+  delete '/pages/:id', to: 'pages#destroy'
 
 end

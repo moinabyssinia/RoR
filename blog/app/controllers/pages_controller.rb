@@ -12,8 +12,6 @@ class PagesController < ApplicationController
     end
 
     def create
-        page_params = params.require(:page)
-            .permit(:title, :body, :slug)
         @page = Page.new(page_params)
         @page.save
         redirect_to '/pages'
@@ -27,11 +25,27 @@ class PagesController < ApplicationController
     def update
         @page = Page.find(params[:id])
         # render plain: params.to_json
-        @page.update(params.require(:page)
-            .permit(:title, :body, :slug))
+        # @page.update(params.require(:page)
+        #     .permit(:title, :body, :slug))
+
+        @page.update(page_params)
+
         @page.save
         redirect_to @page
 
     end
+
+    def destroy
+        @page = Page.find(params[:id])
+        @page.destroy
+        redirect_to '/pages'
+    end
+
+    # making it private
+    private 
+        def page_params
+            params.require(:page)
+                .permit(:title, :body, :slug)
+        end
 
 end
