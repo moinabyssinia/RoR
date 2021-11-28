@@ -3,8 +3,9 @@ Rails.application.routes.draw do
 
   get '/pages', to: 'pages#index'
   get '/pages/new', to: 'pages#new'
-  get '/pages/:id', to: 'pages#show' # directs requests to the 'show' action
+  get '/pages/:id', to: 'pages#show', as: 'page' # directs requests to the 'show' action
   post '/pages', to: 'pages#create' 
-  get 'pages/:id/edit', to: 'pages#edit'
+  get '/pages/:id/edit', to: 'pages#edit', as: 'edit_page'
+  patch '/pages/:id', to: 'pages#update'
 
 end

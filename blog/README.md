@@ -42,3 +42,5 @@ Check available commands
 
 Seed database
 `rails db:seed`
+
+Create Partials

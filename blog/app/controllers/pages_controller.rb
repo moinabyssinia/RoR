@@ -21,6 +21,17 @@ class PagesController < ApplicationController
 
     def edit
         @page = Page.find(params[:id])
+        # render plain: @page.title
+    end
+
+    def update
+        @page = Page.find(params[:id])
+        # render plain: params.to_json
+        @page.update(params.require(:page)
+            .permit(:title, :body, :slug))
+        @page.save
+        redirect_to @page
+
     end
 
 end
